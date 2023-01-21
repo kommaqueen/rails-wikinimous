@@ -1,0 +1,11 @@
+<%= form_with model: article, class: "d-flex align-items-center row mx-auto" do |a| %>
+  <div class="form-outline mb-4">
+    <%= a.label :title, class: "form-label"  %>
+    <%= a.text_field :title, class: "form-control" %>
+  </div>
+  <div class="form-outline-mb-4">
+    <%= a.label :content, class: "form-label" %>
+    <%= a.text_area :content, class: "form-control", rows: 5 %>
+  </div>
+  <button class="btn btn-block mb-4"><%= a.submit %></button>
+<% end %>
